@@ -76,6 +76,11 @@ In order to set the global position, I have first specified it in terms of its g
 </p>
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
 I modified the A* algorithm to incorporate diagonal movments too. I did this by adding additional member values to the "Action" class in planning_utils.py. In addition to this I made some changes in the "valid_actions" function to make the drone move in the diagonal directions. These can be found in lines 58-61 and lines 91-98 in planning_utils.py.
+<p align="center">
+   
+  <img width="400" height="300" src="https://user-images.githubusercontent.com/34810513/80990336-cd89a080-8e53-11ea-9fad-31af615f67b4.jpg">
+  
+</p>
 
 #### 6. Cull waypoints 
 Finally I used the concept collinearity to cull the path and extract the waypoints. I have created three new functions called as point(), collinearity_check() and prune_path() to do the same. point() converts the input values in the form of a tuple to a numpy array for easy calculation. collinearity_check() calculates the determinant of the points and if the area obtained so is lesser than a threshold epsilon, it return the boolean value True. Else it return False. prune_path removes the 2nd value from a group of 3 points if the points are collinear. If not, it considers the 2nd,3rd and the 4th point and leaves the first point behind. This uses a concept of sliding window.
