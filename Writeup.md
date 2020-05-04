@@ -7,6 +7,7 @@
 </p>
 
 This Writeup.md considers the rubric points individually and describes how I addressed each rubric point in my implementation.  
+You can find the youtube video of the demo here:
 
 ---
 ### Writeup / README
@@ -31,15 +32,14 @@ is set as the starting point.
 
 ### Implementing Your Path Planning Algorithm
 
-#### 1. Set your global home position
-Here students should read the first line of the csv file, extract lat0 and lon0 as floating point values and use the self.set_home_position() method to set global home. Explain briefly how you accomplished this in your code.
+#### 1. Setting up the global home position
 
+The task is to read the first line of the csv file, extract lat0 and lon0 as floating point values and use the self.set_home_position() method to set global home.
 
-And here is a lovely picture of our downtown San Francisco environment from above!
-![Map of SF](./misc/map.png)
+I have implemented the solution in the lines from 123 to 127 in motion planning.py I used file reading functionality of python to extract the string and seperate the words based on commas and spaces. Once the string versions of the latitude and longitude were obtained, I converted them to floating point values. I used the set_home_position function to set the latitude and longitude obtained as the home position.
 
-#### 2. Set your current local position
-Here as long as you successfully determine your local position relative to global home you'll be all set. Explain briefly how you accomplished this in your code.
+#### 2. Setting the current local position
+Here I have determined the local position relative to global home.
 
 
 Meanwhile, here's a picture of me flying through the trees!
