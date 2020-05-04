@@ -62,13 +62,18 @@ The local position obtained is with reference to the center of the global home p
 
 <p align="center">
    
-  <img width="817" height="122" src="https://user-images.githubusercontent.com/34810513/80989834-1b51d900-8e53-11ea-998c-7bcb69c098a5.jpg">
+  <img width="400" height="300" src="https://user-images.githubusercontent.com/34810513/80989834-1b51d900-8e53-11ea-998c-7bcb69c098a5.jpg">
   
 </p>
 
 #### 4. Set grid goal position from geodetic coords
 In order to set the global position, I have first specified it in terms of its geodetic coordinates and converted them to their local coordinates and applied the offset on them just like I did with the start coordinates. The lines 147-152 serve this purpose.
 
+<p align="center">
+   
+  <img width="400" height="300" src="https://user-images.githubusercontent.com/34810513/80989996-52c08580-8e53-11ea-9025-6b3262277c8e.jpg">
+  
+</p>
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
 I modified the A* algorithm to incorporate diagonal movments too. I did this by adding additional member values to the "Action" class in planning_utils.py. In addition to this I made some changes in the "valid_actions" function to make the drone move in the diagonal directions. These can be found in lines 58-61 and lines 91-98 in planning_utils.py.
 
