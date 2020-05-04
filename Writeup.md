@@ -90,6 +90,11 @@ Finally I used the concept collinearity to cull the path and extract the waypoin
 
 After implementing the above methods, it was time to execute the flight. The A* algorithm surprisingly consumed more time than in the jupyter notebook excercises to find the path although the code was the same. 
 
+<p align="center">
+   
+  <img width="800" height="600" src="https://user-images.githubusercontent.com/34810513/80990456-fad64e80-8e53-11ea-844a-4d85631180db.gif">
+  
+</p>
   
 # Extra Challenges:
 
