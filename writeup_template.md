@@ -1,8 +1,10 @@
 ## Project: 3D Motion Planning
-![Quad Image](./misc/enroute.png)
 
----
-
+<p align="center">
+   
+  <img width="805" height="593" src="https://user-images.githubusercontent.com/34810513/80971134-ed13cf80-8e39-11ea-8321-c2e53e64d603.jpg">
+  
+</p>
 
 # Required Steps for a Passing Submission:
 1. Load the 2.5D map in the colliders.csv file describing the environment.
