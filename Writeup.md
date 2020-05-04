@@ -44,7 +44,7 @@ The task is to read the first line of the csv file, extract lat0 and lon0 as flo
 I have implemented the solution in the lines from 123 to 127 in motion planning.py I used file reading functionality of python to extract the string and seperate the words based on commas and spaces. Once the string versions of the latitude and longitude were obtained, I converted them to floating point values. I used the set_home_position function to set the latitude and longitude obtained as the home position.
 <p align="center">
    
-  <img width="453" height="97" src="https://user-images.githubusercontent.com/34810513/80982646-3b7c9a80-8e49-11ea-80ea-6d35c5e142a5.jpg">
+  <img width="453" height="97" src="https://user-images.githubusercontent.com/34810513/80983326-12a8d500-8e4a-11ea-9035-5212f071c665.jpg">
   
 </p>
 
