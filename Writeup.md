@@ -31,7 +31,7 @@ is set as the starting point.
 
 <p align="center">
    
-  <img width="805" height="593" src="https://user-images.githubusercontent.com/34810513/80979044-79c38b00-8e44-11ea-8756-0fd7ed3b9f58.jpg">
+  <img width="400" height="300" src="https://user-images.githubusercontent.com/34810513/80979044-79c38b00-8e44-11ea-8756-0fd7ed3b9f58.jpg">
   
 </p>
 
