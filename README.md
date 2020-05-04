@@ -1,5 +1,5 @@
 # FCND - 3D Motion Planning
-![Quad Image](./misc/enroute.png)
+![Quad Image](https://user-images.githubusercontent.com/34810513/80971134-ed13cf80-8e39-11ea-8321-c2e53e64d603.jpg)
 
 
 
