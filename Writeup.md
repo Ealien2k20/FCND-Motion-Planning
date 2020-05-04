@@ -74,6 +74,7 @@ In order to set the global position, I have first specified it in terms of its g
   <img width="400" height="300" src="https://user-images.githubusercontent.com/34810513/80989996-52c08580-8e53-11ea-9025-6b3262277c8e.jpg">
   
 </p>
+
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
 I modified the A* algorithm to incorporate diagonal movments too. I did this by adding additional member values to the "Action" class in planning_utils.py. In addition to this I made some changes in the "valid_actions" function to make the drone move in the diagonal directions. These can be found in lines 58-61 and lines 91-98 in planning_utils.py.
 <p align="center">
