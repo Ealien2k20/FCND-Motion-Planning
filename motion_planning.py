@@ -142,7 +142,7 @@ class MotionPlanning(Drone):
         grid_start = (int(local_position[0]-north_offset),int(local_position[1]-east_offset))
         # TODO: convert start position to current position rather than map center
         # Set goal as some arbitrary position on the grid
-        grid_goal = (-north_offset + 100, -east_offset + 100)
+        # grid_goal = (-north_offset + 100, -east_offset + 100)
         # TODO: adapt to set goal as latitude / longitude position and convert
         global_goal = [0,0,0]
         global_goal[0] = -122.399348
