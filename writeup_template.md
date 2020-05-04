@@ -1,4 +1,4 @@
-## Project: 3D Motion Planning
+## Write Up: 3D Motion Planning
 
 <p align="center">
    
