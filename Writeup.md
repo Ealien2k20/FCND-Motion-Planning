@@ -49,34 +49,35 @@ I have implemented the solution in the lines from 123 to 127 in motion planning.
 </p>
 
 #### 2. Setting the current local position
-Here I have determined the local position relative to global home.
+Here I have determined the local position relative to global home using the global_to_local function of the udacidrone API.
 
-
-Meanwhile, here's a picture of me flying through the trees!
-![Forest Flying](./misc/in_the_trees.png)
+<p align="center">
+   
+  <img width="817" height="122" src="https://user-images.githubusercontent.com/34810513/80983688-77642f80-8e4a-11ea-911b-005b35aa4fe1.jpg">
+  
+</p>
 
 #### 3. Set grid start position from local position
-This is another step in adding flexibility to the start location. As long as it works you're good to go!
+The local position obtained is with reference to the center of the global home position. We have to subtract this local value with the north and east offset values to obtain our position in the grid. This can be found in line 142.
+
 
 #### 4. Set grid goal position from geodetic coords
-This step is to add flexibility to the desired goal location. Should be able to choose any (lat, lon) within the map and have it rendered to a goal location on the grid.
+In order to set the global position, I have first specified it in terms of its geodetic coordinates and converted them to their local coordinates and applied the offset on them just like I did with the start coordinates. The lines 147-152 serve this purpose.
 
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
-Minimal requirement here is to modify the code in planning_utils() to update the A* implementation to include diagonal motions on the grid that have a cost of sqrt(2), but more creative solutions are welcome. Explain the code you used to accomplish this step.
+I modified the A* algorithm to incorporate diagonal movments too. I did this by adding additional member values to the "Action" class in planning_utils.py. In addition to this I made some changes in the "valid_actions" function to make the drone move in the diagonal directions. These can be found in lines 58-61 and lines 91-98 in planning_utils.py.
 
 #### 6. Cull waypoints 
-For this step you can use a collinearity test or ray tracing method like Bresenham. The idea is simply to prune your path of unnecessary waypoints. Explain the code you used to accomplish this step.
-
+Finally I used the concept collinearity to cull the path and extract the waypoints. I have created three new functions called as point(), collinearity_check() and prune_path() to do the same. point() converts the input values in the form of a tuple to a numpy array for easy calculation. collinearity_check() calculates the determinant of the points and if the area obtained so is lesser than a threshold epsilon, it return the boolean value True. Else it return False. prune_path removes the 2nd value from a group of 3 points if the points are collinear. If not, it considers the 2nd,3rd and the 4th point and leaves the first point behind. This uses a concept of sliding window.
 
 
 ### Execute the flight
-#### 1. Does it work?
-It works!
 
-### Double check that you've met specifications for each of the [rubric](https://review.udacity.com/#!/rubrics/1534/view) points.
+After implementing the above methods, it was time to execute the flight. The A* algorithm surprisingly consumed more time than in the jupyter notebook excercises to find the path although the code was the same. 
+
   
-# Extra Challenges: Real World Planning
+# Extra Challenges:
 
-For an extra challenge, consider implementing some of the techniques described in the "Real World Planning" lesson. You could try implementing a vehicle model to take dynamic constraints into account, or implement a replanning method to invoke if you get off course or encounter unexpected obstacles.
+Sadly I haven't implemented any of the planning techniques such as probabilistic roadmap or receding horizon method. The drone's movement doesn't account for the dubin's car problem although I plan to try these things later in the future.
 
 
