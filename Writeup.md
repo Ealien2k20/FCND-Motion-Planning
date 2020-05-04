@@ -11,13 +11,13 @@ This Writeup.md considers the rubric points individually and describes how I add
 ---
 ### Writeup / README
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
+#### 1. To provide a Writeup that includes all the rubric points and how I addressed each one.  
 
-You're reading it! Below I describe how I addressed each rubric point and where in my code each point is handled.
+The current Writeup.md (markdown) file serves the purpose of addressing how I have dealt with the various tasks.
 
-### Explain the Starter Code
+### Explaining the Starter Code
 
-#### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
+#### 1. Explaining the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
 These scripts contain a basic planning implementation that includes...
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
