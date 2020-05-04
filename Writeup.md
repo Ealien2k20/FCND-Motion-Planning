@@ -18,17 +18,16 @@ The current Writeup.md (markdown) file serves the purpose of addressing how I ha
 ### Explaining the Starter Code
 
 #### 1. Explaining the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
-These scripts contain a basic planning implementation that includes...
 
-And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
-![Top Down View](./misc/high_up.png)
+This is my undertanding of the starter code:
 
-Here's | A | Snappy | Table
---- | --- | --- | ---
-1 | `highlight` | **bold** | 7.41
-2 | a | b | c
-3 | *italic* | text | 403
-4 | 2 | 3 | abcd
+1) The Drone initially spawns at the center of the map.
+2) This is the global home by deafult. 
+3) The center of the map (-north_offset, -east_offset)
+is set as the starting point.
+4) The goal is 10 meters to the north and 10 meters to the east of the starting point.
+5) A path is calculated using A* algorithm and the waypoint is calculated.
+6) The drone follows the waypoints and moves in a zigzag manner to the goal.
 
 ### Implementing Your Path Planning Algorithm
 
