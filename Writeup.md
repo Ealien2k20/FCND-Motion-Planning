@@ -5,7 +5,6 @@
   <img width="805" height="593" src="https://user-images.githubusercontent.com/34810513/80971134-ed13cf80-8e39-11ea-8321-c2e53e64d603.jpg">
   
 </p>
-
 This Writeup.md considers the rubric points individually and describes how I addressed each rubric point in my implementation.  
 You can find the youtube video of the demo here:
 
@@ -29,6 +28,12 @@ is set as the starting point.
 4) The goal is 10 meters to the north and 10 meters to the east of the starting point.
 5) A path is calculated using A* algorithm and the waypoint is calculated.
 6) The drone follows the waypoints and moves in a zigzag manner to the goal.
+
+<p align="center">
+   
+  <img width="805" height="593" src="https://user-images.githubusercontent.com/34810513/80979044-79c38b00-8e44-11ea-8756-0fd7ed3b9f58.jpg">
+  
+</p>
 
 ### Implementing Your Path Planning Algorithm
 
