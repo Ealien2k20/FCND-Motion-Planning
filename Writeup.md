@@ -60,6 +60,11 @@ Here I have determined the local position relative to global home using the glob
 #### 3. Set grid start position from local position
 The local position obtained is with reference to the center of the global home position. We have to subtract this local value with the north and east offset values to obtain our position in the grid. This can be found in line 142.
 
+<p align="center">
+   
+  <img width="817" height="122" src="https://user-images.githubusercontent.com/34810513/80989834-1b51d900-8e53-11ea-998c-7bcb69c098a5.jpg">
+  
+</p>
 
 #### 4. Set grid goal position from geodetic coords
 In order to set the global position, I have first specified it in terms of its geodetic coordinates and converted them to their local coordinates and applied the offset on them just like I did with the start coordinates. The lines 147-152 serve this purpose.
